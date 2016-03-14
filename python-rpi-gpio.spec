@@ -6,13 +6,11 @@
 
 Name:           python-rpi-gpio
 Version:        0.6.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        %{sum}
-
 License:        MIT
 URL:            http://sourceforge.net/p/raspberry-gpio-python/wiki/Home/
 Source0:        http://sourceforge.net/projects/raspberry-gpio-python/files/RPi.GPIO-%{version}.tar.gz
-
 BuildRequires:  python-devel
 BuildRequires:  python3-devel
 BuildRequires:  python-setuptools
@@ -25,6 +23,8 @@ Python library for GPIO access on a Raspberry Pi.
 %package -n python2-%{srcname}
 Summary:        %{sum}
 %{?python_provide:%python_provide python2-%{srcname}}
+Obsoletes:      python-rpi-gpio
+Conflicts:      python-rpi-gpio
 
 %description -n python2-%{srcname}
 Python library for GPIO access on a Raspberry Pi.
@@ -58,6 +58,9 @@ Python library for GPIO access on a Raspberry Pi.
 %{python3_sitearch}/RPi*
 
 %changelog
+* Mon Mar 14 2016 Vaughan <vaughan at agrez dot net> - 0.6.2-2
+- Fix conflicts with old package
+
 * Mon Mar 14 2016 Vaughan <vaughan at agrez dot net> - 0.6.2-1
 - New release
 
