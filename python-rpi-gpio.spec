@@ -5,7 +5,7 @@
 %global __provides_exclude_from ^(%{python3_sitearch}/.*\\.so)$
 
 Name:           python-rpi-gpio
-Version:        0.6.1
+Version:        0.6.2
 Release:        1%{?dist}
 Summary:        %{sum}
 
@@ -56,6 +56,9 @@ Python library for GPIO access on a Raspberry Pi.
 %{python3_sitearch}/RPi*
 
 %changelog
+* Mon Mar 14 2016 Vaughan <vaughan at agrez dot net> - 0.6.2-1
+- New release
+
 * Sun Feb 14 2016 Fabian Affolter <mail@fabian-affolter.ch> - 0.6.1-1
 - Add py3 support
 - Update to new upstream version 0.6.1
