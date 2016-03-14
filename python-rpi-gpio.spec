@@ -13,8 +13,10 @@ License:        MIT
 URL:            http://sourceforge.net/p/raspberry-gpio-python/wiki/Home/
 Source0:        http://sourceforge.net/projects/raspberry-gpio-python/files/RPi.GPIO-%{version}.tar.gz
 
-BuildRequires:  python2-devel
+BuildRequires:  python-devel
+BuildRequires:  python3-devel
 BuildRequires:  python-setuptools
+BuildRequires:  python3-setuptools
 
 
 %description
