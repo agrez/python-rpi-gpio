@@ -5,8 +5,8 @@
 %global __provides_exclude_from ^(%{python3_sitearch}/.*\\.so)$
 
 Name:           python-rpi-gpio
-Version:        0.6.2
-Release:        2%{?dist}
+Version:        0.6.3
+Release:        1%{?dist}
 Summary:        %{sum}
 License:        MIT
 URL:            http://sourceforge.net/p/raspberry-gpio-python/wiki/Home/
@@ -58,6 +58,9 @@ Python library for GPIO access on a Raspberry Pi.
 %{python3_sitearch}/RPi*
 
 %changelog
+* Sat Jan 07 2017 Vaughan <vaughan at agrez dot net> - 0.6.3-1
+- New release
+
 * Mon Mar 14 2016 Vaughan <vaughan at agrez dot net> - 0.6.2-2
 - Fix conflicts with old package
 
